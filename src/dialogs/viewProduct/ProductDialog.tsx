@@ -23,7 +23,7 @@ const ProductDialog: React.FC<ProductDialogProps> = ({ product, onClose }) => {
                         <span className='product'><i>Price:</i> <b>{product?.price}$</b></span>
                     </div>
                     <div className="form-group">
-                        <img src={product?.picture} />
+                        <img src={product?.picture} alt="" />
                     </div>
                     <div className="form-group">
                         <span className='product'><i>Description:</i> <b>{product?.description}</b></span>

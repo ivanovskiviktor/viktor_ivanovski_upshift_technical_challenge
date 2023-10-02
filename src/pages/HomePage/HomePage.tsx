@@ -8,7 +8,7 @@ import AddProductDialog from '../../dialogs/addProduct/AddProductDialog';
 import ProductDialog from '../../dialogs/viewProduct/ProductDialog';
 
 
-const HomePage: React.FC = ({ }) => {
+const HomePage: React.FC = () => {
     const [products, setProducts] = useState<Product[]>([]);
     const [sortByTitleAsc, setSortByTitleAsc] = useState<boolean>(false);
     const [sortByPriceAsc, setSortByPriceAsc] = useState<boolean>(false);
@@ -50,10 +50,10 @@ const HomePage: React.FC = ({ }) => {
     //     }
     //   };
 
-    const selectProduct = (product: Product): void => {
-        //fetchProductsByCategoryId(product.categoryId); - I prefer to use this, but there's two products with same categoryId...
-        setSelectedProduct(product);
-    };
+    // const selectProduct = (product: Product): void => {
+    //     fetchProductsByCategoryId(product.categoryId); - I prefer to use this, but there's two products with same categoryId...
+    //     setSelectedProduct(product);
+    // };
 
     const toggleAddProductDialog = (): void => {
         setAddProductDialogOpen(!isAddProductDialogOpen);
@@ -152,7 +152,7 @@ const HomePage: React.FC = ({ }) => {
                                     </div>
                                 </h3>
                                 <div className="card-image">
-                                    <img src={selectedProduct.picture} />
+                                    <img src={selectedProduct.picture} alt=""/>
                                 </div>
                                 <div className="card-description">
                                     <span>{selectedProduct.description}</span>

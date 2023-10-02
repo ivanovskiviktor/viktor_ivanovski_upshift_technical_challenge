@@ -5,7 +5,7 @@ const API_BASE_URL = 'https://my-json-server.typicode.com/drakulovski/dbplacehol
 
 export const simulateAddProduct = async (productData: any, lastProductId: number): Promise<Product> => {
     try {
-        const response = await axios.post<Product>(
+        await axios.post<Product>(
             `${API_BASE_URL}/products`,
             productData,
             {

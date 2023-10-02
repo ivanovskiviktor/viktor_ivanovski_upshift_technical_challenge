@@ -63,7 +63,7 @@ body {
 .card-description {
     margin-top: 20px;
     display: flex;
-    justify-content: start;
+    justify-content: flex-start;
     text-align: left;
     font-size: 20px;
 }
@@ -79,7 +79,7 @@ body {
 
 .right-section {
     display: flex;
-    align-items: end;
+    align-items: flex-end;
     flex-direction: column;
 }
 
